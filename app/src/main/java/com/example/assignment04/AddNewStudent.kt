@@ -15,7 +15,7 @@ class AddNewStudent : AppCompatActivity() {
         var age=findViewById<EditText>(R.id.age)
         var cgpa=findViewById<EditText>(R.id.cgpa)
         var phone=findViewById<EditText>(R.id.phone)
-        var db_obj=Database(this,"Assignment04")
+        var db_obj=Database(this)
         findViewById<Button>(R.id.save).setOnClickListener {
             var obj=students_data(name.text.toString(),regNo.text.toString(),age.text.toString(),cgpa.text.toString(),phone.text.toString())
             db_obj.Insert(obj)

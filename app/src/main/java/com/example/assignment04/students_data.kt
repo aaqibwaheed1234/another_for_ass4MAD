@@ -1,6 +1,6 @@
 package com.example.assignment04
 
-class students_data(name: String,reg_no: String, age: String, cgpa:String, phone:String) {
+class students_data(name: String="",reg_no: String="", age: String="", cgpa:String="", phone:String="") {
 
     var name: String
     var reg_no: String
